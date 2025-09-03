@@ -15,7 +15,7 @@ class Point3D:
 
     def __repr__(self):
         """Returns a string representation of the Point3D object."""
-        return '{}({X:.4},{Y:.4},{Z:.4})'.format(self.__class__.__name__, **vars(self))
+        return '{}({X:.4f},{Y:.4f},{Z:.4f})'.format(self.__class__.__name__, **vars(self))
 
     def __add__(self, other: 'Point3D'):
         """
